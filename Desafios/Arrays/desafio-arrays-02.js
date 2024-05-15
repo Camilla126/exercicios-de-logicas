@@ -6,9 +6,22 @@ Escreva um algoritmo que recebe um array de números inteiros, procure o menor v
 
 */
 
-function getMinNumber(numbers) {
-  // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
+const getMinNumber = (numbers)=> {
+  let minNumber = numbers[0]
+  for (let index=0;index < numbers.length;index +=1){
+    if(numbers[index]< minNumber){
+      minNumber = numbers[index]
+    }
+
+  }
+
+    return minNumber;
+
 }
+
+const menorNumber = getMinNumber([0,70,30,40,90,2,1,5,7]);
+console.log(menorNumber)
+
+
 
 module.exports = getMinNumber;
